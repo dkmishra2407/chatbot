@@ -1,7 +1,8 @@
 import streamlit as st
 from google import genai
 from google.genai import types
-from utils import API_KEY
+
+API_KEY = st.secrets["API_KEY"]
 
 # Initialize the GenAI client
 client = genai.Client(api_key=API_KEY)
